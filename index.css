@@ -338,14 +338,13 @@ img[src='media/images/tickMark.png'],img[src='media/images/crossMark.png']{
     width:100vw;
 }
 
-img[src="media/images/fish.gif"]{
+.frame{
     display: none;
-    position: absolute;
-    height: 10vh;
-    transform: rotateY(180deg);
-    /* transform: rotateX(180deg); */
 }
 
+img[src="media/images/questionBlock.png"]{
+    display: none;
+}
  @media (max-width: 1000px) {
 
     body{
@@ -487,6 +486,59 @@ img[src='media/images/tickMark.png'],img[src='media/images/crossMark.png']{
     border-radius: 3vw;
     border: 0.2vw solid black;
 }
+.frame{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(250, 75, 11);
+    height: 100%;
+}
 
+#frame-top{
+    top:0;
+    left:0;
+    width:100%;
+    height: 2vh;
+}
+
+#frame-bottom{
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 2vh;
+}
+#frame-left{
+    bottom:0;
+    left:0;
+    width:2vh;
+height: 100%;}
+
+    #frame-right{
+        bottom:0;
+        right:0;
+        width:2vh;
+    height:100%;}
+
+    img[src="media/images/questionBlock.png"]{
+        display: block;
+        height: 10vh;
+        position: absolute;
+        z-index: 0;
+    }
+    #top-right{
+        position: absolute;
+     top:-2.8vh;
+     right:-2.8vh;
+    }
+    #bottom-left{
+        position: absolute;
+     bottom:-1vh;
+     left:-0.9vh;
+    }
+    #bottom-right{
+        position: absolute;
+     bottom:-0.8vh;
+     right:-2.8vh;
+    }
 
   }

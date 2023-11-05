@@ -134,7 +134,6 @@ let clearAll=()=>{
 
  
 let showMario=()=>{
-    console.log("Hello");
     let mario=document.getElementById('mario');
     mario.style.display='block';
     let audio= new Audio("media/audioFx/it'sMeMario.mp3");
@@ -202,33 +201,6 @@ else if (!playMusic){
 }
 }
 
-let fishAnim=()=>{
-    let fish=document.getElementById('fish');
-    fish.style.display='block';
-    let marginY=50;
-    let marginX=0;
-    let anim=setInterval(()=>{
-        let fish=document.getElementById('fish');
-        if(marginY==10){
-            clearInterval(anim);
-            let animDown=setInterval(()=>{
-                if(marginY==50){
-                    clearInterval(animDown);
-                    fish.style.display='none';
-                }
-                fish.style.marginTop=`${marginY++}%`;
-                fish.style.marginLeft=`${marginX+=1.2}%`; 
-            },40)
-        }
-        fish.style.marginTop=`${marginY--}%`;
-        fish.style.marginLeft=`${marginX+=0.8}%`;
-    },40)
-}
-
-
-setInterval(()=>{
-    fishAnim()
-},9000)
 
 
 
