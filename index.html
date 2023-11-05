@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidequests</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link href="https://www.dafontfree.net/embed/bmV3LXN1cGVyLW1hcmlvLWZvbnQtdS1yZWd1bGFyJmRhdGEvMS9uLzM1ODMvTmV3IFN1cGVyIE1hcmlvIEZvbnQgVS50dGY" rel="stylesheet" type="text/css"/>
+</head>
+<body id="body">
+    <header></header>
+    <div id="mainContent">
+        <div class="soundButtons">
+            <img src="media/images/turnOffAudio.png" id="turnOffAudio" onclick="musicState(true)">
+            <img src="media/images/turnOnAudio.png" id="turnOnAudio" onclick="musicState(false)">
+        </div>
+        <img src="media/images/cloud.png" alt="" id="cloud1">
+        <img src="media/images/cloud.png" alt="" id="cloud2">
+        <img src="media/images/cloud.png" alt="" id="cloud2">
+     <div class="navBar" id="navBar">
+        <div class="logo" onclick="coinEffect()">
+            <img src="media/images/coin.png" id="coin" style="visibility: hidden;">
+            <button id="coinBox">Side</button><span>Quests</span></div>
+        <div id="taskCount">Tasks x 0</div>
+        <div id="completionCount">Complete x 0</div>
+     </div>
+     <div id="form">
+        <form id="inputForm">
+            <div id="goomba">
+                <img src="media/images/goombaWalking.gif" id="goombaWalking" onclick="goombaDeath()">   
+               </div>
+            <input type="text" id="taskBox" placeholder="Enter a sidequest">
+            <input type="submit" onclick="storeTask()">
+        </form>
+        <div class="taskList" id="taskList">
+        </div>
+     </div>
+     <img src="media/images/castle.png" id="castle" onclick="showMario()">
+     <img src="media/images/mario.png" id="mario">
+     <img src="media/images/piranhaPipe.gif">
+     <img src="media/images/wall.jpg">
+     <img src="media/images/fish.gif" id="fish">
+    </div>
+</body>
+</html>
